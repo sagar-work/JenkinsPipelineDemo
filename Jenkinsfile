@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                build 'testing'
                 echo 'Hello World'
                 git 'https://github.com/sagar-work/jenkins-gitlab-public.git'
             }
